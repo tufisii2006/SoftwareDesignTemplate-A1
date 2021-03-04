@@ -11,7 +11,7 @@ public class ApplicationStart {
         UserRepo ur = new UserRepo();
         User user = new User();
         user.setId(UUID.randomUUID().toString());
-        user.setName("Todoran");
+        user.setName("Ana");
         ur.insertNewUser(user);
     }
 }

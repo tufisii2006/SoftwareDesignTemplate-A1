@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
 
 public class UserRepo {
 	
-	private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("ro.tutorial.lab.SD");
+	private final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("ro.tutorial.lab.SD");
 	
 	public void insertNewUser(User user) {
 		EntityManager em = entityManagerFactory.createEntityManager();
